@@ -6,12 +6,19 @@ import Card from './components/Card';
 function App() {
 
   const[data, setData] = useState<any>();
-  const [count, setCount] = useState(1)
+  let [count, setCount] = useState(1)
   const [img, setImg] = useState<string>('')
   const [nome, setName] = useState<string>('')
   const [status, setStatus] = useState<string>('')
   const [species, setSpecies]  = useState<any>()
   const [origin, setOrig] = useState<string>('')
+
+  function forward(){
+    setCount(count += 1) 
+  }
+  function back(){
+    setCount(count -= 1) 
+  }
   
   
   var URL = `https://rickandmortyapi.com/api/character/${count}`
@@ -33,7 +40,13 @@ function App() {
   return (
     <>
     <main>
+      <button onClick= {back}>
+            <img src= '../../src/assets/img/arrow_back.svg' alt="" />
+      </button>
       <Card name={nome} img={img} status={status} species={species} origin={origin}></Card>
+      <button onClick= {forward}>
+            <img src= '../../src/assets/img/arrow_forward.svg' alt="" />
+      </button>
     </main>
     
     </>
