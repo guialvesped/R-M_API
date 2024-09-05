@@ -1,7 +1,7 @@
 .cardBox {
     border: 1px solid rgb(68, 255, 123);
     border-radius: 10px;
-    box-shadow: rgb(68, 255, 123)0px 54px 55px, rgb(68, 255, 123) 0px -12px 30px, rgb(68, 255, 123) 0px 4px 6px, rgb(68, 255, 123) 0px 12px 13px, rgb(68, 255, 123) 0px -3px 5px;
+    box-shadow: rgb(68, 255, 123)0px 0px 55px, rgb(68, 255, 123) 0px -12px 30px, rgb(68, 255, 123) 0px 0px 6px, rgb(68, 255, 123) 0px 0px 13px, rgb(68, 255, 123) 0px -3px 5px;
     width: 400px;
     max-width: 600px;
     display: flex;
@@ -41,24 +41,27 @@
     background-color: rgb(23, 26, 35);
 }
 .title img {
-    max-width: 25px;
+    max-width: 35px;
     box-shadow: none;
     border-radius: 0;
 }
 .stats {
     color: #ccc;
     display: flex;
+    font-size: 18px;
     flex-direction: column;
     padding-top: 10px;
     gap: 20px;
     width: 85%;
     border-radius: 8px;
     background-color: rgb(23, 26, 35);
+    padding: 20px;
 }
 .stats li {
     list-style-type: none;
     display: flex;
     align-items: center;
+    gap: 10px;
     width: 200px;
 }
 .stats li img {

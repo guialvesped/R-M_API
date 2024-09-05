@@ -1,0 +1,48 @@
+.pCard {
+    border: 1px solid rgb(68, 255, 123);
+    border-radius: 10px;
+    box-shadow: rgb(68, 255, 123)0px 34px 55px, rgb(68, 255, 123) 0px 0px 30px, rgb(68, 255, 123) 0px 4px 6px, rgb(68, 255, 123) 0px 12px 13px, rgb(68, 255, 123) 0px 0px 5px;
+    width: 400px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: #ccc;
+}
+#galaxy {
+    animation: rotate 8s linear infinite;;
+}
+.pCard ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(23, 26, 35);
+  padding: 10px;
+  width: 90%;
+  border-radius: 8px;
+}
+.pCard ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  list-style-type: none;
+  font-size: 18px;
+}
+.title {
+  font-size: 26px;
+  color: rgb(68, 255, 123) !important;
+}
+.planet {
+  max-width: 30px;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

@@ -5,8 +5,7 @@ interface CardProps {
     name : string,
     img : string,
     status : string,
-    species : string,
-    origin : string
+    species : string
 }
 
 
@@ -19,7 +18,7 @@ const Card : React.FC<CardProps> = (props : CardProps) => {
                 <a>
                     {props.name}
                 </a>
-                <img src="../../src/assets/img/astronaut.svg" alt="" />
+                <img src="../../src/assets/img/rick_icon.svg" alt="" />
             </div>
             <ul className="stats">
                 <li>
@@ -30,7 +29,6 @@ const Card : React.FC<CardProps> = (props : CardProps) => {
                     <img src="../../src/assets/img/nave.svg" alt="" />
                     Species: {props.species} 
                 </li>
-                Origin Planet: {props.origin}
             </ul>
         </div>
         </>
