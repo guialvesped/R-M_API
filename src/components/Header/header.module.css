@@ -1,0 +1,42 @@
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contato {
+    list-style-type: none;
+    align-items: center ;
+    transition: border 0.5s ease-in-out;
+}
+.contato:hover {
+    border: 1px solid #44FF7B;
+    padding: 5px;
+    border-radius: 8px;
+}
+.contato a {
+    text-decoration: none;
+    color: #44FF7B;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.contato img {
+    max-width: 30px;
+    padding: 7px;
+}
+.text {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.contato:hover .text {
+    opacity: 1;
+}
+@media only screen and (max-width: 800px){
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+    }
+  }

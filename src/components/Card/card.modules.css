@@ -1,7 +1,7 @@
 .cardBox {
-    border: 1px solid rgb(68, 255, 123);
+    border: 1px solid #44FF7B;
     border-radius: 10px;
-    box-shadow: rgb(68, 255, 123)0px 0px 55px, rgb(68, 255, 123) 0px -12px 30px, rgb(68, 255, 123) 0px 0px 6px, rgb(68, 255, 123) 0px 0px 13px, rgb(68, 255, 123) 0px -3px 5px;
+    box-shadow: #44FF7B 0px 0px 55px, #44FF7B 0px -12px 30px, #44FF7B 0px 0px 6px, #44FF7B 0px 0px 13px, #44FF7B 0px -3px 5px;
     width: 400px;
     max-width: 600px;
     display: flex;
@@ -12,7 +12,7 @@
 }
 .cardBox img {
     max-width: 200px;
-    box-shadow: 0 0 10px rgb(68, 255, 123);
+    box-shadow: 0 0 10px #44FF7B;
     border-radius: 10px;
 }
 .cardBox a {

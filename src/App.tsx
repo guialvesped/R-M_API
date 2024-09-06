@@ -5,6 +5,7 @@ import Card from './components/Card';
 import PlanetCard from './components/PlanetCard';
 import seta_left from './assets/img/arrow_back.svg'
 import seta_right from './assets/img/arrow_forward.svg'
+import Header from './components/Header';
 
 function App() {
 
@@ -64,6 +65,7 @@ function App() {
 
   return (
     <>
+    <Header/>
     <main>
       <button onClick= {back}>
             <img src={seta_left} alt="" />
