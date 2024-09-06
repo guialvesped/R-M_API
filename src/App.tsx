@@ -64,7 +64,7 @@ function App() {
     <>
     <main>
       <button onClick= {back}>
-            <img src= '../../src/assets/img/arrow_back.svg' alt="" />
+            <img src= '../../../src/assets/img/arrow_back.svg' alt="" />
       </button>
       <div id='info'>
         <Card name={nome} img={img} status={status} species={species}></Card>
