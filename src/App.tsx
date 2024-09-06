@@ -3,6 +3,7 @@ import './App.css'
 import axios from 'axios';
 import Card from './components/Card';
 import PlanetCard from './components/PlanetCard';
+import seta_left from './assets/img/arrow_back.svg'
 
 function App() {
 
@@ -64,7 +65,7 @@ function App() {
     <>
     <main>
       <button onClick= {back}>
-            <img src= '../../../src/assets/img/arrow_back.svg' alt="" />
+            <img src= './assets/img/arrow_back.svg' alt="" />
       </button>
       <div id='info'>
         <Card name={nome} img={img} status={status} species={species}></Card>
