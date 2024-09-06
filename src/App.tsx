@@ -4,6 +4,7 @@ import axios from 'axios';
 import Card from './components/Card';
 import PlanetCard from './components/PlanetCard';
 import seta_left from './assets/img/arrow_back.svg'
+import seta_right from './assets/img/arrow_forward.svg'
 
 function App() {
 
@@ -65,14 +66,14 @@ function App() {
     <>
     <main>
       <button onClick= {back}>
-            <img src= './assets/img/arrow_back.svg' alt="" />
+            <img src={seta_left} alt="" />
       </button>
       <div id='info'>
         <Card name={nome} img={img} status={status} species={species}></Card>
         <PlanetCard pName={dataPlanet?.name} pDimension={dataPlanet?.dimension} pType={dataPlanet?.type}/>
       </div>
       <button onClick= {forward}>
-            <img src= '../../src/assets/img/arrow_forward.svg' alt="" />
+            <img src={seta_right} alt="" />
       </button>
     </main>
     
